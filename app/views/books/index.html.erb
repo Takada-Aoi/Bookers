@@ -1,8 +1,7 @@
-<body class="books-body">
 
- 
+<body class="books-body">
  <h1>Bookes</h1>
- 
+
  <form>
   <table>
    <thead>
@@ -28,8 +27,8 @@
 
 
 <h2>New book</h2>
-
-<%= form_with model:@book,local:true do |f|%>
+<%= render 'error_messages'%>
+<%= form_with model:@book,local:true do |f| %>
 
   <div class="field">
    <%= f.label :Title%>
@@ -42,7 +41,7 @@
   <div class="actions">
    <%= f.submit'Create Book'%>
   </div>
-<%end%>
 
+  <%end%>
 
 </body>

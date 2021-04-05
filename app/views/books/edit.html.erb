@@ -1,7 +1,8 @@
 <h2>Editing book</h2>
 
-
+<%= render 'error_messages'%>
 <%= form_with model:@book,local:true do |f|%>
+
   <div>
    <%= f.label :Title%>
    <%= f.text_field :title%>
@@ -9,6 +10,12 @@
   <div>
    <%= f.label :Body%>
    <%= f.text_area :body%>
-   <%= f.submit'Create Book'%>
+   <%= f.submit'update book'%>
   </div>
 <%end%>
+ <p>
+  <%=link_to "Show",book_path(params[:id])%>|
+  <%=link_to "Back",books_path %>
+
+</p>
+

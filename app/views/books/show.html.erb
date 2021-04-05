@@ -1,14 +1,15 @@
 
 <p>
   <strong>Title</strong>
-  <%=@book.title%>
+  <%= @book.title%>
 </p>
 
 <p>
   <strong>Body</strong>
-  <%=@book.body%>
+  <%= @book.body%>
 </p>
 
 <p>
-  <%=link_to "Edit",edit_book_path(book)%>|<%=link_to "Back",books%>
+  <%=link_to "Edit",edit_book_path(params[:id])%>|
+  <%=link_to "Back",books_path %>
 </p>

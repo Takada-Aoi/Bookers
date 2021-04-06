@@ -13,11 +13,6 @@
  *= require_tree .
  *= require_self
  */
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
- }
 body {
     background-color: #fff;
     color: #333;
@@ -26,7 +21,6 @@ body {
     line-height: 18px;
     margin: 33px;
 }
-
 
 p, ol, ul, td {
     font-family: verdana, arial, helvetica, sans-serif;
@@ -71,4 +65,8 @@ label{
     margin-bottom: 0;
     background-color: #c00;
     color: #fff;
+}
+
+.notice{
+  color: green;
 }
